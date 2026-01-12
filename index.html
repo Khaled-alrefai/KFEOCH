@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFEOCH</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styleIndex.css">
+
+    <!-- Cairo & Cairo play font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo+Play:slnt,wght@2,200..1000&family=Cairo:wght@200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!--  -->
+
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top d-none d-lg-block" dir="ltr">
+        <div class="container">
+            <!-- Navbar row 1 -->
+            <div class="d-flex w-100 align-items-center justify-content-between mb-2">
+                <!-- Logo -->
+                <a class="navbar-brand m-0" href="#">
+                    <img src="./img/logo-horizontal-white.png" alt="">
+                </a>
+
+                <!-- Right Link  -->
+
+                <ul class="nav p-0 ">
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="" class=" btn btn-light ms-2">تسجيل الدخول</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link p-1" href="#"><i class="fa-solid fa-house"></i> الرئيسية
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Navbar row 2 -->
+            <div class=" d-lg-flex d-none w-100 align-items-center justify-content-between">
+                <!-- Link -->
+                <ul class="nav p-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="000" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-building-columns"></i> من نحن
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="000">
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="111" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-compass-drafting"></i> المكاتب الهندسية
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="111">
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="222" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-scale-balanced"></i> مكاتب المحاماة
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="222">
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="333" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-bullhorn"></i> الإعلام
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="333">
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-calendar-days"></i> المؤتمرات
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Login button -->
+                <ul class="nav p-0">
+                    <li class="nav-item">
+                        <a href="" class=" btn btn-light">تسجيل الدخول</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav class="navbar d-lg-none sticky-top" dir="ltr">
+        <div class="container">
+            <div class="d-flex w-100 align-items-center justify-content-between mb-2">
+                <a class="navbar-brand m-0" href="#">
+                    <img src="./img/logo-horizontal-white.png" alt="">
+                </a>
+                <div class="d-flex ms-1 me-1 align-items-center">
+                    <div class="">
+                        <!-- <button class="btn btn-outline-light d-flex align-items-center">
+                                                <span class="ms-1 me-1"> العربية</span>
+                                                <img src="https://flagcdn.com/w20/sa.png" alt="علم السعودية" class="flag-icon">
+                                            </button> -->
+                        <button class="btn btn-outline-light d-flex align-items-center ">
+                            <span class="ms-1 me-1"> English </span>
+                            <img src="https://flagcdn.com/w20/gb.png" alt="علم بريطانيا" class="flag-icon">
+                        </button>
+                    </div>
+                    <button class="btn sidebarbtn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebar" aria-controls="sidebar">
+                        <i class="fa-solid fa-bars "></i>
+                    </button>
+
+
+                </div>
+                <!-- القائمة الجانبية -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="sidebarLabel">القائمة</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="إغلاق"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- نفس روابط الـ Navbar -->
+
+                        <ul class="nav flex-column">
+                            <a class="navbar-brand m-0" href="#">
+                                <img src="./img/logo-horizontal-white.png" alt="">
+                            </a>
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="000" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-building-columns"></i> من نحن
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="000">
+                                    <li><a class="dropdown-item" href="#">تعريف</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="111" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-compass-drafting"></i> المكاتب الهندسية
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="111">
+                                    <li><a class="dropdown-item" href="#">قائمة المكاتب</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="222" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-scale-balanced"></i> مكاتب المحاماة
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="222">
+                                    <li><a class="dropdown-item" href="#">قائمة المحامين</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="333" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bullhorn"></i> الإعلام
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="333">
+                                    <li><a class="dropdown-item" href="#">وسائل الإعلام</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa-solid fa-calendar-days"></i> المؤتمرات
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-3">
+                                <a href="#" class="btn rightminbtn w-100">تسجيل الدخول</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Hero Section -->
+    <section class="hero-section">
+        <button id="scrollTopBtn"> <i class="fa-solid fa-angles-up"></i>
+        </button>
+
+        <div class="container ">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 ">
+                    <h1 class="fw-bolder mb-3">
+                        اتحاد المكاتب الهندسية والدور الاستشارية الكويتية
+                    </h1>
+                    <button class="btn cta-button mb-2">دخول الأعضاء</button>
+                    <p class="fw-bold text-body-secondary text-center  mb-4">
+                        إذا لم تكن من الأعضاء اطلع على <a class="regester" href="#">شروط التسجيل</a>
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="swiper banner-swiper" data-aos="fade-up">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/slide1.webp" alt="" class="rounded">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slide2.webp" alt="" class="rounded">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slide3.webp" alt="" class="rounded">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slide4.webp" alt="" class="rounded">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slide5.webp" alt="" class="rounded">
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Quick Navigation Glass -->
+            <div class="glassdiv">
+
+                <a href="#welcome" class="quick-link welcome text-decoration-none fw-bold ">
+                    <i class="bi bi-house"></i>
+                    <span>الترحيب</span>
+                </a>
+
+                <a href="#offices" class="quick-link text-decoration-none fw-bold">
+                    <i class="bi bi-building"></i>
+                    <span>المكاتب</span>
+                </a>
+
+                <a href="#about" class="quick-link text-decoration-none fw-bold">
+                    <i class="bi bi-info-circle"></i>
+                    <span>من نحن</span>
+                </a>
+
+                <a href="#news" class="quick-link text-decoration-none fw-bold">
+                    <i class="bi bi-newspaper"></i>
+                    <span>الأخبار</span>
+                </a>
+
+                <a href="#news" class="quick-link text-decoration-none fw-bold">
+                    <i class="bi bi-newspaper"></i>
+                    <span>التواصل</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+
+    <!-- Start Office-Section -->
+
+    <section class="office-section">
+        <!-- Start Members section -->
+        <section class="members-section " data-aos="slide-up">
+            <div class="container text-center">
+                <h2 class="fw-bold text-muted-white">انضم الى أكثر من...</h2>
+                <div class=" row g-2">
+                    <div class="member col-4 ">
+                        <span>1</span>
+                        <h2 class="">المكاتب العالمية</h2>
+                        <p>مكاتب دولية ضمن إطار الاتحاد</p>
+                    </div>
+                    <div class="member col-4 ">
+                        <span>335</span>
+                        <h2>المكاتب المحلية</h2>
+                        <p>مكاتب محلية منضمة إلى الاتحاد</p>
+                    </div>
+                    <div class="member col-4">
+                        <span>2</span>
+                        <h2>المكاتب التخصصية</h2>
+                        <p>مكاتب متخصصة منضمة للاتحاد</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Members section -->
+
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up">
+                <div class="search-wrapper mx-auto">
+                    <div class="search-modern d-flex align-items-center gap-3"> <i
+                            class="fa-solid fa-magnifying-glass search-icon fs-5"></i> <input type="text"
+                            placeholder="ابحث عن المكاتب الموجودة..."> <button
+                            class="search-btn d-none d-sm-inline-flex">
+                            بحث
+                        </button> </div>
+                </div>
+            </div>
+            <div class="office-slider" data-aos="fade-left" data-aos-delay="150" data-aos-duration="700">
+
+                <div class="card office-card text-center mx-auto" style="width: 280px;">
+                    <img src="./img/1242.webp" class="card-img-top mx-auto mt-3" alt="شعار المكتب"
+                        style="width:120px; height:120px; object-fit:cover; border-radius:12px;">
+                    <!-- اسم المكتب -->
+                    <div class="card-body">
+                        <h5 class="card-title">مكتب الهندسة والاستشارات</h5>
+                    </div>
+                </div>
+                <div class="card office-card text-center mx-auto" style="width: 280px;">
+                    <img src="./img/1242.webp" class="card-img-top mx-auto mt-3" alt="شعار المكتب"
+                        style="width:120px; height:120px; object-fit:cover; border-radius:12px;">
+                    <!-- اسم المكتب -->
+                    <div class="card-body">
+                        <h5 class="card-title">مكتب الهندسة والاستشارات</h5>
+                    </div>
+                </div>
+                <div class="card office-card text-center mx-auto" style="width: 280px;">
+                    <img src="./img/1242.webp" class="card-img-top mx-auto mt-3" alt="شعار المكتب"
+                        style="width:120px; height:120px; object-fit:cover; border-radius:12px;">
+                    <!-- اسم المكتب -->
+                    <div class="card-body">
+                        <h5 class="card-title">مكتب الهندسة والاستشارات</h5>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-secondary mt-3"> عرض كافة المكاتب..</button>
+        </div>
+    </section>
+    <!-- End Office-Section -->
+
+
+    <!-- Start News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-title m-auto" data-aos="fade-up">
+                <h2 class="fw-bold text-muted">
+                    <i class="fas fa-newspaper text-muted"></i>
+                    اَخر الأخبار
+                </h2>
+            </div>
+            <div class="row g-3 align-items-stretch">
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right">
+                    <div class="row g-3">
+
+                        <div class="col-6">
+                            <div class="card h-100">
+                                <img src="./img/35.jpeg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">شهادة صب خرسانة</h5>
+                                    <p class="card-text">
+                                        خبر مختصر يوضّح محتوى الخبر الثاني.
+                                    </p>
+                                    <p class="text-muted mt-3 mb-0">2025/1/6</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card h-100">
+                                <img src="./img/35.jpeg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">شهادة صب خرسانة</h5>
+                                    <p class="card-text">
+                                        خبر مختصر يوضّح محتوى الخبر الثاني.
+                                    </p>
+                                    <p class="text-muted mt-3 mb-0">2025/1/6</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card h-100">
+                                <img src="./img/35.jpeg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">شهادة صب خرسانة</h5>
+                                    <p class="card-text ">
+                                        خبر مختصر يوضّح محتوى الخبر الثاني.
+                                    </p>
+                                    <p class="text-muted mt-3 mb-0">2025/1/6</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card h-100">
+                                <img src="./img/35.jpeg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">شهادة صب خرسانة</h5>
+                                    <p class="card-text">
+                                        خبر مختصر يوضّح محتوى الخبر الثاني.
+                                    </p>
+                                    <p class="text-muted mt-3 mb-0">2025/1/6</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="btn btn-secondary mt-3">عرض المزيد من الأخبار..</button>
+
+                </div>
+
+
+                <div class="col-md-6 d-none d-md-flex">
+                    <img src="./img/News-image.webp" class="img-fluid rounded news-img" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End News Section -->
+
+
+    <!-- Start event Section -->
+    <section class="event-section">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="900">
+                    <a href="" class="text-decoration-none">
+                        <div class="modern-card">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-3 ">
+                                    <div class="icon-circle bg-gradient-green">
+                                        <i class="fas fa-sign-in-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9 ">
+                                    <h3>دخول الأعضاء</h3>
+                                    <p class="m-0">اضغط هنا لتسجيل الدخول</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1100">
+                    <a href="" class="text-decoration-none">
+                        <div class="modern-card">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-3">
+                                    <div class="icon-circle bg-gradient-blue">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <h3>الفعاليات</h3>
+                                    <p class="m-0">اضغط هنا لعرض اَخرالفعاليات</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End event Section -->
+
+
+    <!-- Start About-us Section -->
+    <section class="about-us">
+        <div class="container my-5">
+            <div class="section-title text-center mb-5" data-aos="slide-right">
+                <h2 class="fw-bold">من نحن</h2>
+                <p class="text-muted">تعرف أكثر على اتحاد المكاتب الهندسية والدور الاستشارية الكويتية</p>
+            </div>
+            <div class="row g-4">
+
+                <!-- الكرت الأول -->
+                <div class="col-12 col-md-4" data-aos="fade-up">
+                    <div class="card h-100 bg-light border-0 shadow-sm">
+                        <img src="./img/we-img.png" class="card-img-top card-img-fixed" alt="صورة توضيحية">
+                        <div class="card-body">
+                            <h3 class="fw-bold">من نحن
+                            </h3>
+                            <p class="text-muted mb-0">أسس اتحاد المكاتب الهندسية والدور الاستشارية الكويتية في يوم
+                                الأحد الموافق 23/4/2006 م بمقتضى
+                                القانون رقم 38 لسنة 1964، ومقره مدينة الكويت.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الكرت الثاني -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 bg-light border-0 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./img/serv-img.png" class="card-img-top " alt="صورة توضيحية">
+                        <div class="card-body">
+                            <h3 class="fw-bold">لماذا نحن</h3>
+                            <p class="text-muted mb-0">
+                                يسعى الاتحاد لرعاية مصالح الأعضاء والدفاع عن حقوقهم وتمثيل المكاتب الهندسية أمام الجهات
+                                الرسمية
+                                والشركات والهيئات العربية والأجنبية، واقتراح الأنظمة واللوائح التي ترفع مستوى المهنة
+                                الهندسية. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الكرت الثالث -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 bg-light border-0 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./img/how-img.png" class="card-img-top " alt="صورة توضيحية">
+                        <div class="card-body">
+                            <h3 class="fw-bold">كيف يمكننا مساعدتك؟</h3>
+                            <p class="text-muted mb-0">
+                                نحن سعداء بالتواصل معكم عبر كافة وسائل التواصل ونسعى لتلبية طلبات الأعضاء ونفخر بخدمة
+                                زوارنا الكرام. </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End About-us Section -->
+
+
+    <!-- Start Contact-us Section -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <h2 class="fw-bold" data-aos="fade-up">تواصل معنا</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-4 contact-details flex-column d-flex justify-content-between">
+                    <a class="card text-decoration-none shadow-sm mb-2" data-aos="slide-left">
+                        <div class="card-body d-flex align-items-center justify-content-between gap-3"> <span
+                                class="fa fa-phone fs-4 text-primary"></span>
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold">اتصل بنا</div>
+                                <div class="text-muted small">+965 69045559</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card text-decoration-none shadow-sm mb-2" href="mailto:info@kfeoch.org.kw"
+                        data-aos="slide-left" data-aos-delay="100">
+                        <div class="card-body d-flex align-items-center justify-content-between gap-3"> <span
+                                class="fa fa-envelope fs-4 text-primary"></span>
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold">البريد الإلكتروني</div>
+                                <div class="text-muted small">info@kfeoch.org.kw</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card text-decoration-none shadow-sm mb-2" href="https://wa.me/+96569045559"
+                        target="_blank" data-aos="slide-left" data-aos-delay="200">
+                        <div class="card-body d-flex align-items-center justify-content-between gap-3"> <span
+                                class="fa-brands fa-whatsapp fs-4 text-success"></span>
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold">واتساب</div>
+                                <div class="text-muted small">+965 69045559</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card text-decoration-none shadow-sm mb-2"
+                        href="https://www.youtube.com/channel/UCXYmofAzCAE9Mce8YCTtKOQ" target="_blank"
+                        data-aos="slide-left" data-aos-delay="300">
+                        <div class="card-body d-flex align-items-center justify-content-between gap-3"> <span
+                                class="fa-brands fa-youtube fs-4 text-danger"></span>
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold">يوتيوب</div>
+                                <div class="text-muted small">قناتنا الرسمية</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card text-decoration-none shadow-sm" href="https://www.facebook.com/kfeoch"
+                        target="_blank" data-aos="slide-left" data-aos-delay="400">
+                        <div class="card-body d-flex align-items-center justify-content-between gap-3"> <span
+                                class="fa-brands fa-facebook fs-4 text-primary"></span>
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold">فيسبوك</div>
+                                <div class="text-muted small">صفحتنا الرسمية</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- map location -->
+                <div class="col-12 col-sm-8 map-our mt-sm-0 mt-2">
+                    <div style="width: 100%; height: 400px; border-radius: 8px; overflow: hidden;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2901.7070668615365!2d48.001372!3d29.381523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf8321ab6c0b9f%3A0x53cfc79597176838!2z2KfYqtit2KfYryDYp9mE2YXZg9in2KrYqCDYp9mE2YfZhtiv2LPZitipINmI2KfZhNiv2YjYsSDYp9mE2KfYs9iq2LTYp9ix2YrYqSDYp9mE2YPZiNmK2KrZitip!5e1!3m2!1sen!2snl!4v1767714163955!5m2!1sen!2snl"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact-us Section -->
+
+    <!-- start footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- العمود الأول -->
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h3 class="brand-name">KFEOCH</h3>
+                    <p>الموقع الالكتروني الرسمي لاتحاد المكاتب الهندسية
+                    </p>
+                    <p>والدور الاستشارية
+                        الكويتية</p>
+
+                    <div class="social-icons">
+                        <!-- فيسبوك -->
+                        <a href="https://www.facebook.com/kfeoch">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <!-- يوتيوب -->
+                        <a href="https://www.youtube.com/channel/UCXYmofAzCAE9Mce8YCTtKOQ">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <!-- واتساب -->
+                        <a href="https://wa.me/+96569045559">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- العمود الثاني -->
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h5>تنقل سريع</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a>
+                                <i class="bi bi-house"></i> الترحيب
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="bi bi-building"></i> المكاتب
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="bi bi-info-circle"></i> من نحن
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="bi bi-newspaper"></i> الأخبار
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="bi bi-newspaper"></i> التواصل
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- العمود الثالث -->
+                <div class="col-12 col-md-4 text-center">
+                    <h5>روابط قد تفيدك</h5>
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="row">
+                <div class="col text-center">
+                    <p>كافة الحقوق محفوظة &copy; 2026 KFEOCH</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', function () { const swiper = new Swiper('.banner-swiper', { loop: true, slidesPerView: 1, effect: 'fade', fadeEffect: { crossFade: true }, speed: 1000, autoplay: { delay: 4000, disableOnInteraction: false, }, pagination: { el: '.swiper-pagination', clickable: true, }, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', } }); }); </script>
+
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        // إظهار الزر عند النزول لأسفل الصفحة
+        window.onscroll = function () {
+            let btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // عند الضغط على الزر، العودة للأعلى بسلاسة
+        document.getElementById("scrollTopBtn").onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+    </script>
+
+
+</body>
+
+</html>
